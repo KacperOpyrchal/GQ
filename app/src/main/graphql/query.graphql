@@ -1,0 +1,10 @@
+query GetKid($firstName: String, $lastName: String) {
+  allKids(filter:{
+    firtsname: $firstName,
+    lastname: $lastName
+  }) {
+    firtsname
+    lastname
+    dateOfBirth
+  }
+}
